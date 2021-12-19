@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+.clear {
+    clear: both;
+}
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.333333%;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+#main {
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* BEGIN: HEADER */
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;   
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a {
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 14px;
+    line-height: 38px;
+    font-size: 15px;
+    
+}
+
+#nav .subnav li {
+    list-style-type: none;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#header .search-btn,
+#header .mobile-menu-btn {
+    float: right;
+    padding: 0px 22px;
+}
+
+#header .mobile-menu-btn {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn .menu-icon {
+    color: #000;
+}
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-icon,
+#header .menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* END: HEADER */
+
+
+/* BEGIN : SLIDER */
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-slider {
+    position: absolute;
+    bottom: 47px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-parah {
+    font-size: 15px;
+    margin-top: 25px;
+}
+/* END: SLIDER */
+
+
+/* BEGIN : CONTENT */
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+    font-size: 15px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.section-sub-heading {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 25px 0;
+}
+
+.section-paragrah {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* <!-- BEGIN: member-list --> */
+#content .member-list {
+    padding-top: 47px;
+    text-align: center;
+    
+}
+.member-list .member-item {
+    float: left;
+}
+.member-list .member-name {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.member-list .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+/* END: member-list */
+
+/* BEGIN: tickets-list */
+#content .tour-section {
+    background-color: #000;
+    color: #fff;
+}
+.tour-section .ticket-list {
+    font-size: 15px;
+    color: #757575;
+    background-color: #fff;
+    margin-top: 40px;
+}
+.tour-section .ticket-list li {
+    list-style-type: none;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket-list .sold-out {
+    background-color: #f44336;
+    padding: 4px 5px;
+    color: #fff;
+    margin-left: 16px;
+}
+.ticket-list .quality {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    padding: 3px 8px;
+    float: right;
+    margin-right: 16px;
+    margin-top: -2px;
+}
+/* END: tickets-list */
+
+
+/* BEGIN : PLACE-LIST */
+#content .place-list {
+    margin: 32px -8px 0; 
+    
+}
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+.place-img {
+    width: 100%;
+    padding: 0 -8px;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    color: #000;
+    padding: 16px;
+    font-size: 15px;
+    
+}
+
+.place-heading {
+    font-size: 15px;
+}
+
+.place-time {
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.place-pragrah {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.place-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.place-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+/* END: place-list */
+
+/* BEGIN: CONTACT */
+.contact-content {
+    font-size: 18px;
+    padding: 32px 0;
+}
+.contact-info {
+    line-height: 1.5;
+}
+.icon {
+    width: 35px;
+    display: inline-block;
+}
+.form-control {
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 8px 0 0 -8px;
+}
+
+.contact-submit {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    margin: 16px 8px;
+}
+.contact-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    outline: 1px solid #000;
+}
+/* END: CONTACT */
+.map-section img {
+    width: 100%;
+    margin-top: -54px;
+    filter: grayscale(50%);
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .footer-list {
+    font-size: 24px;
+}
+
+#footer .footer-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .footer-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.4);
+}
